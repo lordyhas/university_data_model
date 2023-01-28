@@ -16,13 +16,13 @@ class Course {
 
   const Course({
     required this.title,
-    this.shortTitle,
     required this.lessonCredit,
     required this.hours,
     required this.raters,
     required this.rates,
     required this.imagePath,
     required this.courseID,
+    this.shortTitle,
   });
 
   @override
@@ -52,15 +52,15 @@ class Course {
 
   @override
   String toString() {
-    return 'Course{' +
-        ' title: $title,' +
-        ' shortTitle: $shortTitle,' +
-        ' lessonCredit: $lessonCredit,' +
-        ' hours: $hours,' +
-        ' raters: $raters,' +
-        ' rates: $rates,' +
-        ' imagePath: $imagePath,' +
-        ' courseID: $courseID,' +
+    return 'Course{'
+        ' title: $title,'
+        ' shortTitle: $shortTitle,'
+        ' lessonCredit: $lessonCredit,'
+        ' hours: $hours,'
+        ' raters: $raters,'
+        ' rates: $rates,'
+        ' imagePath: $imagePath,'
+        ' courseID: $courseID,'
         '}';
   }
 
@@ -72,7 +72,7 @@ class Course {
     int? raters,
     int? rates,
     String? imagePath,
-    dynamic? courseID,
+    dynamic courseID,
   }) {
     return Course(
       title: title ?? this.title,

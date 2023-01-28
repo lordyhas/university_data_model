@@ -65,24 +65,24 @@ class Teacher {
 
   @override
   String toString() {
-    return 'Teacher{' +
-        ' id: $id,' +
-        ' name: $name,' +
-        ' lastName: $lastName,' +
-        ' firstName: $firstName,' +
-        ' birthdate: $birthdate,' +
-        ' birthplace: $birthplace,' +
-        ' nationality: $nationality,' +
-        ' registrationNumber: $registrationNumber,' +
-        ' registrationDate: $registrationDate,' +
-        ' gender: $gender,' +
-        ' teacherID: $teacherID,' +
-        ' address: $address,' +
+    return 'Teacher{'
+        ' id: $id,'
+        ' name: $name,'
+        ' lastName: $lastName,'
+        ' firstName: $firstName,'
+        ' birthdate: $birthdate,'
+        ' birthplace: $birthplace,'
+        ' nationality: $nationality,'
+        ' registrationNumber: $registrationNumber,'
+        ' registrationDate: $registrationDate,'
+        ' gender: $gender,'
+        ' teacherID: $teacherID,'
+        ' address: $address,'
         '}';
   }
 
   Teacher copyWith({
-    dynamic? id,
+    dynamic id,
     String? name,
     String? lastName,
     String? firstName,
@@ -92,8 +92,8 @@ class Teacher {
     String? registrationNumber,
     DateTime? registrationDate,
     String? gender,
-    dynamic? teacherID,
-    dynamic? address,
+    dynamic teacherID,
+    dynamic address,
   }) {
     return Teacher(
       id: id ?? this.id,
